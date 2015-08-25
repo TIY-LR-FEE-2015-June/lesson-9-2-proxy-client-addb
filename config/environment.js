@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    proxyHost: 'http://fast-woodland-8663.herokuapp.com',
     modulePrefix: 'drink-it-up',
     environment: environment,
     baseURL: '/',

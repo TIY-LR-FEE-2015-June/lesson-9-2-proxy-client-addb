@@ -1,0 +1,9 @@
+<table>
+  {{#each model.result as |drink|}}
+  <tr>
+    <td>{{link-to drink.name 'drinks.detail' drink}}</td>
+    <td>{{drink.descriptionPlain}}</td>
+    <td>{{drink.servedIn.id}}</td>
+  </tr>
+  {{/each}}
+</table>

@@ -1,0 +1,15 @@
+<h2>{{model.name}} - <span>{{model.skill.name}}</span></h2>
+
+<p>{{model.descriptionPlain}}</p>
+
+<h3>Ingredients</h3>
+<table>
+  {{#each model.ingredients as |ingredient|}}
+    <tr>
+      <td>{{ingredient.textPlain}}</td>
+    </tr>
+  {{/each}}
+</table>
+
+<h3>Glass Details</h3>
+{{glass-detail glass=glass}}
